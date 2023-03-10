@@ -1,0 +1,1 @@
+krovinio diegimas sd fd

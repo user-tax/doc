@@ -1,0 +1,1 @@
+cargo ko installer sd fd

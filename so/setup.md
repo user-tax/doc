@@ -1,0 +1,1 @@
+xamuulka ku rakib sd fd

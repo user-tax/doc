@@ -1,0 +1,1 @@
+nneɛma a wɔde fa so install sd fd

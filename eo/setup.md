@@ -1,0 +1,1 @@
+kargo instali sd fd

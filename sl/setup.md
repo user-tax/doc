@@ -1,0 +1,1 @@
+tovorna namestitev sd fd

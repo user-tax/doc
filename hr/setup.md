@@ -1,0 +1,1 @@
+teretna instalacija sd fd

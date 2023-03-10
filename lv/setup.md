@@ -1,0 +1,1 @@
+kravas uzstādīšana sd fd

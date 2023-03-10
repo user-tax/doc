@@ -1,0 +1,1 @@
+yük quraşdırma sd fd
