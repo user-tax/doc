@@ -10,7 +10,7 @@ Istovremeno ćemo kompajlirati openresty-jev modul lua-nginx-module (i luajit2 i
 
 Kompilirajte ngx_brotli da omogućite podršku za br kompresiju pretraživača.
 
-Kompilirajte [nchan](https://github.com/slact/nchan) da omogućite podršku za pretvaranje dugih websocket konekcija u http zahtjeve.
+Kompilirajte [nchan](https://github.com/slact/nchan) da biste omogućili podršku za pretvaranje dugih veza websocketa u http zahtjeve.
 
 Sve skripte su upakovane u [bazu koda](https://github.com/user-tax-dev/os) , samo pokrenite sljedeću naredbu.
 
@@ -30,7 +30,7 @@ Greška će biti prijavljena kada se prevede lua-nginx-module.
 
 Predan je izmijenjeni zahtjev za spajanje.
 
-https://github.com/openresty/lua-nginx-module/pull/2168/files#diff-ebaa829579f91b18746b0bb13948131e7dcaa19dbae1d843c6fbbebc682951a2<br>poređenje cjelobrojnih izraza različitih predznaka
+https://github.com/openresty/lua-nginx-module/pull/2168/files#diff-ebaa829579f91b18746b0bb13948131e7dcaa19dbae1d843c6fbbebc682951a2<br>poređenje cjelobrojnih izraza različitog predznaka
 
 Može se privremeno popraviti sljedećim kodom.
 
