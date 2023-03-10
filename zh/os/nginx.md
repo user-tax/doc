@@ -1,6 +1,6 @@
 # nginx 编译安装和配置
 
-都 2023 了，nginx 还不支持 HTTP3 。
+已经 2023 了，nginx 还不支持 HTTP3 。
 
 不过，nginx 官方有一个 [nginx-quic](https://quic.nginx.org) 的分支。
 
