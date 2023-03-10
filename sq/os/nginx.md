@@ -1,6 +1,6 @@
 # Instalimi dhe konfigurimi i përpilimit të nginx
 
-Është viti 2023 dhe nginx nuk e mbështet ende HTTP3.
+Është tashmë 2023 dhe nginx nuk e mbështet ende HTTP3.
 
 Sidoqoftë, nginx zyrtarisht ka një degë të [nginx-quic](https://quic.nginx.org) .
 

@@ -1,6 +1,6 @@
 # nginx kompilyasiyasının quraşdırılması və konfiqurasiyası
 
-2023-cü ildir və nginx hələ HTTP3-ü dəstəkləmir.
+Artıq 2023-cü ildir və nginx hələ HTTP3-ü dəstəkləmir.
 
 Bununla belə, nginx rəsmi olaraq [nginx-quic](https://quic.nginx.org) filialına malikdir.
 

@@ -1,6 +1,6 @@
 # nginx daɲɛgafe sigili ni a labɛnni
 
-San 2023 don, wa nginx ma HTTP3 dɛmɛ fɔlɔ.
+A bɛ 2023 sàn na kaban, wa nginx ma HTTP3 Dɛmɛ fɔlɔ.
 
 Nka, nginx bolofara dɔ bɛ yen foroba la [nginx-quic](https://quic.nginx.org) .
 

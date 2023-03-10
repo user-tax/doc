@@ -1,6 +1,6 @@
 # تركيب وتكوين تجميع nginx
 
-إنه 2023 ، ولا يدعم nginx HTTP3 حتى الآن.
+إنه بالفعل 2023 ، ولا يدعم nginx HTTP3 حتى الآن.
 
 ومع ذلك ، فإن nginx لديه فرعًا من [nginx-quic](https://quic.nginx.org) رسميًا.
 

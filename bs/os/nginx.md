@@ -1,6 +1,6 @@
 # instalacija i konfiguracija nginx kompilacije
 
-2023. je, a nginx još ne podržava HTTP3.
+Već je 2023., a nginx još ne podržava HTTP3.
 
 Međutim, nginx zvanično ima granu [nginx-quic](https://quic.nginx.org) .
 

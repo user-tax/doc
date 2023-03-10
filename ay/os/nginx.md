@@ -1,6 +1,6 @@
 # nginx compilación ukan utt’ayata ukat configuración
 
-2023 marawa, ukatx nginx ukax janiw HTTP3 ukaruw yanapt’kiti.
+Niya 2023 marana, ukatx nginx ukax janiw HTTP3 ukaruw yanapt’kiti.
 
 Ukampirus nginx ukax oficialmentex [nginx-quic](https://quic.nginx.org) ukan mä rama ukaniwa.
 

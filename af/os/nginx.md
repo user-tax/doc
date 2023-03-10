@@ -1,6 +1,6 @@
 # nginx samestelling installasie en konfigurasie
 
-Dit is 2023, en nginx ondersteun nog nie HTTP3 nie.
+Dit is reeds 2023, en nginx ondersteun nog nie HTTP3 nie.
 
 Nginx het egter amptelik 'n tak van [nginx-quic](https://quic.nginx.org) .
 

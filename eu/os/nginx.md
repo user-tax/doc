@@ -1,6 +1,6 @@
 # nginx konpilazioaren instalazioa eta konfigurazioa
 
-2023 da, eta nginx-ek ez du HTTP3 onartzen oraindik.
+Dagoeneko 2023 da, eta nginx-ek ez du HTTP3 onartzen oraindik.
 
 Hala ere, nginx-ek ofizialki [nginx-quic-en](https://quic.nginx.org) adar bat du.
 

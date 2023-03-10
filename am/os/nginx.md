@@ -1,6 +1,6 @@
 # nginx ማጠናቀር መጫን እና ማዋቀር
 
-2023 ነው፣ እና nginx ገና HTTP3ን አይደግፍም።
+ቀድሞውንም 2023 ነው፣ እና nginx ገና HTTP3ን አይደግፍም።
 
 ሆኖም፣ nginx በይፋ የ [nginx-quic](https://quic.nginx.org) ቅርንጫፍ አለው።
 

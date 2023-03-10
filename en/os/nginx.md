@@ -1,6 +1,6 @@
 # nginx compilation installation and configuration
 
-It's 2023, and nginx doesn't support HTTP3 yet.
+It's already 2023, and nginx doesn't support HTTP3 yet.
 
 However, nginx officially has a branch of [nginx-quic](https://quic.nginx.org) .
 
