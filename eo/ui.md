@@ -1,0 +1,3 @@
+## mediovariablo
+
+ELEMENT_IGNORE

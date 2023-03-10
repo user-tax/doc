@@ -1,0 +1,1 @@
+yuk o'rnatish sd fd

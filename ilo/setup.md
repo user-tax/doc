@@ -1,0 +1,1 @@
+karga nga i-install sd fd

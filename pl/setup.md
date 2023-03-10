@@ -1,0 +1,1 @@
+ładunek zainstaluj sd fd

@@ -1,0 +1,1 @@
+rakomány telepítése sd fd

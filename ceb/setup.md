@@ -1,0 +1,1 @@
+pag-instalar sa kargamento sd fd

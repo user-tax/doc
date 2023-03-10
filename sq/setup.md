@@ -1,0 +1,1 @@
+ngarkesa instaloni sd fd

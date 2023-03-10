@@ -1,0 +1,3 @@
+## miljøvariabel
+
+ELEMENT_IGNORE

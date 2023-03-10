@@ -1,0 +1,4 @@
+## 環境變量
+
+ELEMENT_IGNORE
+

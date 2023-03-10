@@ -1,0 +1,1 @@
+zama instalatu sd fd
