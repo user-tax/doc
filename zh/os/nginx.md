@@ -17,3 +17,9 @@
 ```
 git clone --depth=1 https://github.com/user-tax-dev/os.git && ./os/ubuntu/nginx/setup.sh
 ```
+
+中国大陆的用户如果访问 github 不稳定，可以先运行下面的命令配置下 github 全局代理。
+
+```
+git config --global url."https://ghproxy.com/https://github.com".insteadOf "https://github.com"
+```

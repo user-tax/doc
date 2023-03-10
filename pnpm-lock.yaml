@@ -2,11 +2,11 @@ lockfileVersion: 5.4
 
 specifiers:
   '@u6x/jsext': ^0.0.27
-  '@user.tax/i18n': ^0.0.61
+  '@user.tax/i18n': ^0.0.68
 
 dependencies:
   '@u6x/jsext': 0.0.27
-  '@user.tax/i18n': 0.0.61
+  '@user.tax/i18n': 0.0.68
 
 packages:
 
@@ -63,8 +63,8 @@ packages:
     resolution: {integrity: sha512-a2cZuw5av0d8zjkuYca4B+yeK2d6fvuN8X08Uliq7zkqJnVtQb4zgCTwQdVjhsimjzlrZdU2Kywig4YXOp1JqQ==}
     dev: false
 
-  /@u7/utf8/0.0.3:
-    resolution: {integrity: sha512-85WtjC4jeFaKbCEFzTfwqmV05UgG4/UylFEWDfbOykGIFdUZE9sltSOv/PQjUJ6jYEaZdWm6Wm5XTMEkqtYfUQ==}
+  /@u7/utf8/0.0.4:
+    resolution: {integrity: sha512-gJ5ipK1A6enJAPRAkOvr2WGuYMCki+EVp07mqXeViQo7vSEpWbIKnTx07a3aTb3urFBQWdV1gEKO9f1ppRWENw==}
     dev: false
 
   /@u7/walk/0.0.10:
@@ -95,8 +95,8 @@ packages:
       js-yaml: 4.1.0
     dev: false
 
-  /@user.tax/i18n/0.0.61:
-    resolution: {integrity: sha512-yRIUVGl8Xyd7G+z4gPqc1QhZgKyS2w9vwV8FaN8gHB4N1JO6ePV0YhgLkAlbbGdKACnSPJVj6o5z+V+8zsOnig==}
+  /@user.tax/i18n/0.0.68:
+    resolution: {integrity: sha512-fTfv91fk4b2cjqRstBFkcH9donT55Awwfvfr3Bs9c5GxhTmyyXiKHSwfFc4O9CxjTpN+MUvHiDDx/B3wSp5x8g==}
     hasBin: true
     dependencies:
       '@u6x/jsext': 0.0.27
@@ -107,7 +107,7 @@ packages:
       '@u7/sleep': 0.0.3
       '@u7/snake': 0.0.16
       '@u7/u8': 0.0.9
-      '@u7/utf8': 0.0.3
+      '@u7/utf8': 0.0.4
       '@u7/walk': 0.0.10
       '@u7/wasm-set': 0.0.9
       '@u7/write': 0.0.9
