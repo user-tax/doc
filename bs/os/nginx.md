@@ -1,4 +1,4 @@
-# NGINX kompilacija i instalacija
+# instalacija i konfiguracija nginx kompilacije
 
 2023. je, a nginx još ne podržava HTTP3.
 
@@ -22,4 +22,18 @@ Ako korisnici u kontinentalnoj Kini ne mogu pristupiti githubu, prvo mogu pokren
 
 ```
 git config --global url."https://ghproxy.com/https://github.com".insteadOf "https://github.com"
+```
+
+## TODO izbrisati sadržaj
+
+Greška će biti prijavljena kada se prevede lua-nginx-module.
+
+Predan je izmijenjeni zahtjev za spajanje.
+
+https://github.com/openresty/lua-nginx-module/pull/2168/files#diff-ebaa829579f91b18746b0bb13948131e7dcaa19dbae1d843c6fbbebc682951a2<br>poređenje cjelobrojnih izraza različitih predznaka
+
+Može se privremeno popraviti sljedećim kodom.
+
+```
+sd "ngx_int_t\s+rc, i;" "ngx_int_t rc;size_t i;" /tmp/nginx-quic/lua-nginx-module/src/ngx_http_lua_socket_tcp.c
 ```

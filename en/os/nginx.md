@@ -1,4 +1,4 @@
-# NGINX compilation and installation
+# nginx compilation installation and configuration
 
 It's 2023, and nginx doesn't support HTTP3 yet.
 
@@ -22,4 +22,18 @@ If users in mainland China cannot access github, they can first run the followin
 
 ```
 git config --global url."https://ghproxy.com/https://github.com".insteadOf "https://github.com"
+```
+
+## TODO delete content
+
+An error will be reported when lua-nginx-module is compiled.
+
+An amended merge request has been submitted.
+
+https://github.com/openresty/lua-nginx-module/pull/2168/files#diff-ebaa829579f91b18746b0bb13948131e7dcaa19dbae1d843c6fbbebc682951a2<br>comparison of integer expressions of different signedness
+
+It can be temporarily fixed with the following code.
+
+```
+sd "ngx_int_t\s+rc, i;" "ngx_int_t rc;size_t i;" /tmp/nginx-quic/lua-nginx-module/src/ngx_http_lua_socket_tcp.c
 ```

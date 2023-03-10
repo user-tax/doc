@@ -1,4 +1,4 @@
-# NGINX কম্পাইলিং আৰু সংস্থাপন
+# nginx কম্পাইলিং সংস্থাপন আৰু বিন্যাস
 
 ই ২০২৩, আৰু nginx এ এতিয়াও HTTP3 সমৰ্থন নকৰে।
 
@@ -22,4 +22,18 @@ git clone --depth=1 https://github.com/user-tax-dev/os.git && ./os/ubuntu/nginx/
 
 ```
 git config --global url."https://ghproxy.com/https://github.com".insteadOf "https://github.com"
+```
+
+## TODO কন্টেন্ট মচি পেলাওক
+
+lua-nginx-module কম্পাইল কৰাৰ সময়ত এটা ভুল ৰিপৰ্ট কৰা হব।
+
+সংশোধিত একত্ৰীকৰণৰ অনুৰোধ দাখিল কৰা হৈছে।
+
+https://github.com/openresty/lua-nginx-module/pull/2168/files#diff-ebaa829579f91b18746b0bb13948131e7dcaa19dbae1d843c6fbbebc682951a2<br>বিভিন্ন চিহ্নিতকৰণৰ পূৰ্ণসংখ্যা অভিব্যক্তিৰ তুলনা
+
+তলত দিয়া ক’ডটোৰ সহায়ত ইয়াক সাময়িকভাৱে ঠিক কৰিব পাৰি।
+
+```
+sd "ngx_int_t\s+rc, i;" "ngx_int_t rc;size_t i;" /tmp/nginx-quic/lua-nginx-module/src/ngx_http_lua_socket_tcp.c
 ```

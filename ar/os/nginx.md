@@ -1,4 +1,4 @@
-# تجميع وتركيب NGINX
+# تركيب وتكوين تجميع nginx
 
 إنه 2023 ، ولا يدعم nginx HTTP3 حتى الآن.
 
@@ -22,4 +22,18 @@ git clone --depth=1 https://github.com/user-tax-dev/os.git && ./os/ubuntu/nginx/
 
 ```
 git config --global url."https://ghproxy.com/https://github.com".insteadOf "https://github.com"
+```
+
+## TODO حذف المحتوى
+
+سيتم الإبلاغ عن خطأ عند تجميع وحدة lua-nginx.
+
+تم تقديم طلب دمج معدل.
+
+https://github.com/openresty/lua-nginx-module/pull/2168/files#diff-ebaa829579f91b18746b0bb13948131e7dcaa19dbae1d843c6fbbebc682951a2<br>مقارنة بين التعبيرات الصحيحة ذات التوقيعات المختلفة
+
+يمكن إصلاحه مؤقتًا باستخدام الكود التالي.
+
+```
+sd "ngx_int_t\s+rc, i;" "ngx_int_t rc;size_t i;" /tmp/nginx-quic/lua-nginx-module/src/ngx_http_lua_socket_tcp.c
 ```

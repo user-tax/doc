@@ -1,4 +1,4 @@
-# NGINX dalajɛli ni a sigili
+# nginx daɲɛgafe sigili ni a labɛnni
 
 San 2023 don, wa nginx ma HTTP3 dɛmɛ fɔlɔ.
 
@@ -22,4 +22,18 @@ Ni baarakɛlaw minnu bɛ Sinuwa jamanaba kɔnɔ, olu ma Se ka don github la, u b
 
 ```
 git config --global url."https://ghproxy.com/https://github.com".insteadOf "https://github.com"
+```
+
+## TODO ka kɔnɔkow bɔ yen
+
+Misali dɔ bɛna fɔ ni lua-nginx-module labɛnna.
+
+Ladilikan dɔ kɛra ka fara ɲɔgɔn kan, o ɲinini kɛra.
+
+https://github.com/openresty/lua-nginx-module/pull/2168/files#diff-ebaa829579f91b18746b0bb13948131e7dcaa19dbae1d843c6fbbebc682951a2<br>jateden dafalenw jiracogo minnu taamasiyɛn tɛ kelen ye, olu sangali
+
+A bɛ se ka labɛn waati dɔɔnin ni nin kode in ye.
+
+```
+sd "ngx_int_t\s+rc, i;" "ngx_int_t rc;size_t i;" /tmp/nginx-quic/lua-nginx-module/src/ngx_http_lua_socket_tcp.c
 ```

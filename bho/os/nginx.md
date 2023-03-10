@@ -1,4 +1,4 @@
-# एनजीआईएनएक्स संकलन आ इंस्टॉलेशन के काम कइल जाला
+# nginx संकलन इंस्टॉलेशन आ कॉन्फ़िगरेशन के बा
 
 ई 2023 के बा, आ nginx अभी तक HTTP3 के सपोर्ट नइखे करत।
 
@@ -22,4 +22,18 @@ git clone --depth=1 https://github.com/user-tax-dev/os.git && ./os/ubuntu/nginx/
 
 ```
 git config --global url."https://ghproxy.com/https://github.com".insteadOf "https://github.com"
+```
+
+## टोडो सामग्री हटावे के बा
+
+lua-nginx-module के संकलन कइला पर त्रुटि के रिपोर्ट कइल जाई।
+
+संशोधित विलय के निहोरा पेश कइल गइल बा.
+
+https://github.com/openresty/lua-nginx-module/pull/2168/files#diff-ebaa829579f91b18746b0bb13948131e7dcaa19dbae1d843c6fbbebc682951a2 पर दिहल गइल बा<br>अलग-अलग हस्ताक्षर के पूर्णांक अभिव्यक्ति के तुलना
+
+एकरा के अस्थायी रूप से निम्नलिखित कोड से ठीक कइल जा सकेला।
+
+```
+sd "ngx_int_t\s+rc, i;" "ngx_int_t rc;size_t i;" /tmp/nginx-quic/lua-nginx-module/src/ngx_http_lua_socket_tcp.c
 ```

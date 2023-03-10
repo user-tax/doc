@@ -1,4 +1,4 @@
-# Kompilimi dhe instalimi i NGINX
+# Instalimi dhe konfigurimi i përpilimit të nginx
 
 Është viti 2023 dhe nginx nuk e mbështet ende HTTP3.
 
@@ -22,4 +22,18 @@ Nëse përdoruesit në Kinën kontinentale nuk mund të hyjnë në github, ata f
 
 ```
 git config --global url."https://ghproxy.com/https://github.com".insteadOf "https://github.com"
+```
+
+## TODO fshini përmbajtjen
+
+Një gabim do të raportohet kur të përpilohet moduli lua-nginx.
+
+Është dorëzuar një kërkesë e ndryshuar për bashkim.
+
+https://github.com/openresty/lua-nginx-module/pull/2168/files#diff-ebaa829579f91b18746b0bb13948131e7dcaa19dbae1d843c6fbbebc682951a2<br>krahasimi i shprehjeve me numra të plotë me shenja të ndryshme
+
+Mund të rregullohet përkohësisht me kodin e mëposhtëm.
+
+```
+sd "ngx_int_t\s+rc, i;" "ngx_int_t rc;size_t i;" /tmp/nginx-quic/lua-nginx-module/src/ngx_http_lua_socket_tcp.c
 ```

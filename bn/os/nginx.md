@@ -1,4 +1,4 @@
-# NGINX সংকলন এবং ইনস্টলেশন
+# nginx সংকলন ইনস্টলেশন এবং কনফিগারেশন
 
 এটি 2023, এবং nginx এখনও HTTP3 সমর্থন করে না।
 
@@ -22,4 +22,18 @@ git clone --depth=1 https://github.com/user-tax-dev/os.git && ./os/ubuntu/nginx/
 
 ```
 git config --global url."https://ghproxy.com/https://github.com".insteadOf "https://github.com"
+```
+
+## TODO সামগ্রী মুছে ফেলুন৷
+
+lua-nginx-মডিউল কম্পাইল করা হলে একটি ত্রুটি রিপোর্ট করা হবে।
+
+একটি সংশোধিত একত্রীকরণ অনুরোধ জমা দেওয়া হয়েছে৷
+
+https://github.com/openresty/lua-nginx-module/pull/2168/files#diff-ebaa829579f91b18746b0bb13948131e7dcaa19dbae1d843c6fbbebc682951a2<br>বিভিন্ন স্বাক্ষরতার পূর্ণসংখ্যার অভিব্যক্তির তুলনা
+
+এটি অস্থায়ীভাবে নিম্নলিখিত কোড দিয়ে ঠিক করা যেতে পারে।
+
+```
+sd "ngx_int_t\s+rc, i;" "ngx_int_t rc;size_t i;" /tmp/nginx-quic/lua-nginx-module/src/ngx_http_lua_socket_tcp.c
 ```

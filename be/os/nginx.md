@@ -1,4 +1,4 @@
-# Кампіляцыя і ўстаноўка NGINX
+# Ўстаноўка і канфігурацыя кампіляцыі nginx
 
 Цяпер 2023 год, і nginx яшчэ не падтрымлівае HTTP3.
 
@@ -22,4 +22,18 @@ git clone --depth=1 https://github.com/user-tax-dev/os.git && ./os/ubuntu/nginx/
 
 ```
 git config --global url."https://ghproxy.com/https://github.com".insteadOf "https://github.com"
+```
+
+## TODO выдаліць кантэнт
+
+Пры кампіляцыі lua-nginx-module будзе паведамлена пра памылку.
+
+Зменены запыт на аб'яднанне быў пададзены.
+
+https://github.com/openresty/lua-nginx-module/pull/2168/files#diff-ebaa829579f91b18746b0bb13948131e7dcaa19dbae1d843c6fbbebc682951a2<br>параўнанне цэлых выразаў рознай знакавасці
+
+Гэта можна часова выправіць з дапамогай наступнага кода.
+
+```
+sd "ngx_int_t\s+rc, i;" "ngx_int_t rc;size_t i;" /tmp/nginx-quic/lua-nginx-module/src/ngx_http_lua_socket_tcp.c
 ```

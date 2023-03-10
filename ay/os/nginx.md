@@ -1,4 +1,4 @@
-# NGINX compilación ukat instalación ukanak luraña
+# nginx compilación ukan utt’ayata ukat configuración
 
 2023 marawa, ukatx nginx ukax janiw HTTP3 ukaruw yanapt’kiti.
 
@@ -22,4 +22,18 @@ China continental ukan apnaqirinakax github ukar jan mantañjamäkani ukhax nayr
 
 ```
 git config --global url."https://ghproxy.com/https://github.com".insteadOf "https://github.com"
+```
+
+## TODO ukax contenido chhaqtayaña
+
+Mä pantjasiw yatiyasini kunapachatix lua-nginx-module ukax apthapita.
+
+Mä chiqanchata mayachawi mayiwixa uñt’ayatawa.
+
+Ukhamaraki, ukaxa mä juk’a pachanakwa lurasirakispa<br>kunayman chimpunakampi chimpuntata expresiones enteras ukanakampi chikachasiña
+
+Mä juk’a pachatakix aka chimpumpiw askichasispa.
+
+```
+sd "ngx_int_t\s+rc, i;" "ngx_int_t rc;size_t i;" /tmp/nginx-quic/lua-nginx-module/src/ngx_http_lua_socket_tcp.c
 ```

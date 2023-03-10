@@ -1,4 +1,4 @@
-# NGINX konpilazioa eta instalazioa
+# nginx konpilazioaren instalazioa eta konfigurazioa
 
 2023 da, eta nginx-ek ez du HTTP3 onartzen oraindik.
 
@@ -22,4 +22,18 @@ Txina kontinentaleko erabiltzaileek ezin badute github-era atzitu, lehenengo kom
 
 ```
 git config --global url."https://ghproxy.com/https://github.com".insteadOf "https://github.com"
+```
+
+## EDUKIAK ezabatu
+
+Errore bat jakinaraziko da lua-nginx-module konpilatzen denean.
+
+Bateratze-eskaera aldatua aurkeztu da.
+
+https://github.com/openresty/lua-nginx-module/pull/2168/files#diff-ebaa829579f91b18746b0bb13948131e7dcaa19dbae1d843c6fbbebc682951a2<br>zeinu ezberdineko esamolde osoen konparaketa
+
+Aldi baterako ondoko kodearekin konpondu daiteke.
+
+```
+sd "ngx_int_t\s+rc, i;" "ngx_int_t rc;size_t i;" /tmp/nginx-quic/lua-nginx-module/src/ngx_http_lua_socket_tcp.c
 ```
