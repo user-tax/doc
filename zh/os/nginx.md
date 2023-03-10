@@ -1,4 +1,4 @@
-# NGINX 编译安装
+# nginx 编译安装和配置
 
 都 2023 了，nginx 还不支持 HTTP3 。
 
