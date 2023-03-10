@@ -2,11 +2,11 @@ lockfileVersion: 5.4
 
 specifiers:
   '@u6x/jsext': ^0.0.27
-  '@user.tax/i18n': ^0.0.68
+  '@user.tax/i18n': ^0.0.70
 
 dependencies:
   '@u6x/jsext': 0.0.27
-  '@user.tax/i18n': 0.0.68
+  '@user.tax/i18n': 0.0.70
 
 packages:
 
@@ -95,8 +95,8 @@ packages:
       js-yaml: 4.1.0
     dev: false
 
-  /@user.tax/i18n/0.0.68:
-    resolution: {integrity: sha512-fTfv91fk4b2cjqRstBFkcH9donT55Awwfvfr3Bs9c5GxhTmyyXiKHSwfFc4O9CxjTpN+MUvHiDDx/B3wSp5x8g==}
+  /@user.tax/i18n/0.0.70:
+    resolution: {integrity: sha512-APRFijn8EackhgLXhXFEwKv+OpxfcZJqPtHxk4HRJnkE0VYcLyK783HFHYb9mj7KyCxZXWaBWX8jBBBRjQUUdQ==}
     hasBin: true
     dependencies:
       '@u6x/jsext': 0.0.27
