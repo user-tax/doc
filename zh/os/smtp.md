@@ -83,7 +83,7 @@ net.ipv6.conf.lo.disable_ipv6 = 0
 
 ![](https://pub-b8db533c86124200a9d799bf3ba88099.r2.dev/2023/03/5MEi41I.webp)
 
-然后重启服务器。
+然后 `netplan apply` 让修改后的配置生效。
 
 配置成功后，可使用 `curl 6.ipw.cn` 查看自己外网的 ipv6 地址。
 
