@@ -2,6 +2,12 @@
 
 ## Cloudflare
 
+cloudflare /v 的超时时间的问题 
+
+https://community.cloudflare.com/t/cache-rules-uri-equals-not-working/481036
+
+解决方案 ， 改为『结尾是』/v ，而不是等于 /v
+
 ### CNAME
 
 [CloudFlare 免费 CNAME 接入教程](https://luotianyi.vc/6185.html)
